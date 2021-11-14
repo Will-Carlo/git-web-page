@@ -37,9 +37,10 @@
             <div class="content">
                 <h2>Somos los mejores</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet autem
-                    excepturi optio rerum nisi iure inventore, impedit quibusdam, cum molestias
-                    id non necessitatibus consequatur suscipit iusto? Ratione totam quam aperiam.
+                    🙌 Hey, que tal muchach@s, somos el frente GIT
+                    ⚫🔺⬛( Go! Informática Transformando ) ⬛🔺⚫,
+                    estamos postulando al CEI 2021-2023 (Centro de
+                    Estudiantes de Informática)🗓️.
                 </p>
                 <a href="#">Read more</a>
             </div>
@@ -348,39 +349,43 @@
     <section class="contact" id="contacto">
 
         <div class="container">
-            <h2>Comunicate con nosotros</h2>
-            <div class="row100">
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span class="text">Nombre completo</span>
-                        <span class="line"></span>
+            <form action="" id="form">
+                <h2>Comunicate con nosotros</h2>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">
+                            <span class="text">Nombre completo</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="phone" required="required">
+                            <span class="text">Celular</span>
+                            <span class="line"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span class="text">Celular</span>
-                        <span class="line"></span>
+                
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox textarea">
+                            <textarea required="required" name="mensaje"></textarea>
+                            <span class="text">Mensaje</span>
+                            <span class="line"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="row100">
-                <div class="col">
-                    <div class="inputBox textarea">
-                        <textarea required="required"></textarea>
-                        <span class="text">Mensaje</span>
-                        <span class="line"></span>
+    
+                <div class="row100">
+                    <div class="col">
+                        <input type="submit" value="Enviar">
                     </div>
                 </div>
-            </div>
-
-            <div class="row100">
-                <div class="col">
-                    <input type="submit" value="Enviar">
-                </div>
-            </div>
+    
+            </form>
+            <a href="mailto:jespejoq@fcpn.edu.bo" id="mail">mail</a>
         </div>
     </section>
 
@@ -439,6 +444,16 @@
     </div>
 
     <script>
+        const formu = document.querySelector('#form');
+        const $buttonMailto = document.querySelector('#mail')
+        formu.addEventListener('submit', handleSubmit);
+        function handleSubmit(){
+            event.preventDefault();
+            const form = new FormData(this);
+            $buttonMailto.setAttribute('href', `mailto:jespejoq@fcpn.edu.bo?subject=nombre ${form.get('name')}  celular ${form.get('phone')}&body=${form.get('mensaje')}`);
+            $buttonMailto.click();
+        }
+
         const marker = document.querySelector('#marker');
         const item = document.querySelectorAll('header ul li a');
         function Indicator(e) {

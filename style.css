@@ -1105,6 +1105,9 @@ header ul li:nth-child(7):hover ~ #marker::before {
 .contact .container .row100 .col .inputBox textarea:valid ~ .line {
   height: 100%;
 }
+#mail {
+  opacity: 0;
+}
 .contact .container .row100 .col input[type="submit"] {
   border: none;
   padding: 10px 40px;
