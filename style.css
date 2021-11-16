@@ -220,7 +220,12 @@ header ul li:nth-child(7):hover ~ #marker::before {
   padding-left: 100px;
 }
 .home .content h2 {
-  font-size: 3em;
+  font-size: 2em;
+  color: #fff;
+  /* color: #000000c7; */
+}
+.home .content h4 {
+  font-size: 1.3em;
   color: #fff;
   /* color: #000000c7; */
 }
@@ -336,7 +341,7 @@ header ul li:nth-child(7):hover ~ #marker::before {
 /* =================================================================================== */
 /* ====================================== ABOUT ====================================== */
 .about {
-  padding: 50px 120px 0px 120px;
+  padding: 50px 100px 0px 100px;
 }
 
 .about .row {
