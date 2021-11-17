@@ -246,17 +246,17 @@ header ul li:nth-child(7):hover ~ #marker::before {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .home .image img {
-  max-width: 600px;
-  height: 550px;
+  max-width: 400px;
+  height: 400px;
   animation: animate 5s linear infinite;
 }
 @keyframes animate {
   0%,
   100% {
-    transform: translateY(50px);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(100px);
+    transform: translateY(50px);
   }
 }
 .home .container .social {
