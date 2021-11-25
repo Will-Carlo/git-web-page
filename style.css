@@ -246,8 +246,8 @@ header ul li:nth-child(7):hover ~ #marker::before {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .home .image img {
-  max-width: 400px;
-  height: 400px;
+  max-width: 650px;
+  height: 650px;
   animation: animate 5s linear infinite;
 }
 @keyframes animate {
