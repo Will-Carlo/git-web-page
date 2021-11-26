@@ -358,7 +358,7 @@ header ul li:nth-child(7):hover ~ #marker::before {
   position: relative;
   border-radius: 0 20px 20px 0;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  width: 80%;
+  width: 40%;
 }
 .about .row .col502 {
   border-radius: 20px 0 0 20px;
